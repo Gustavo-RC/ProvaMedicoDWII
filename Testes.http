@@ -1,0 +1,28 @@
+###
+POST http://localhost:1234/medico/cadastrar
+content-type: application/json
+
+{
+    "nome": "Dr. Nelson Martins",
+    "crm": "CRM-PR2.279",
+    "especialidade": "Clinico Geral"
+}
+
+###
+GET http://localhost:1234/medico/buscar/CRM-PR2.270
+
+###
+GET http://localhost:1234/medico/listar
+
+###
+PUT http://localhost:1234/medico/alterar
+content-type: application/json
+
+{
+    "nome": "Dr. Nelson Gonn",
+    "crm": "CRM-PR2.279",
+    "especialidade": "Dentista"
+}
+
+###
+DELETE http://localhost:1234/medico/remover/CRM-PR2.2
