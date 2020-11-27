@@ -1,0 +1,12 @@
+###
+POST http://localhost:1234/medico/cadastrar
+content-type: application/json
+
+{
+    "nome": "Dr. Nelson Martins",
+    "crm": "CRM-PR2.333",
+    "especialidade": "Clinico Geral"
+}
+
+###
+GET http://localhost:1234/medico/listar

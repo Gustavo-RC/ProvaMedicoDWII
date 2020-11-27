@@ -1,0 +1,20 @@
+<div class="conteudo">
+  <mat-card id="medico" class="centro">
+    <mat-card-title>Cadastro de Médicos</mat-card-title>
+    <div class="campos">
+      <mat-form-field class="campo">
+        <mat-label>Nome</mat-label>
+        <input matInput name="nome" [(ngModel)]="nome" />
+      </mat-form-field>
+      <mat-form-field class="campo">
+        <mat-label>CRM</mat-label>
+        <input matInput name="crm" [(ngModel)]="crm" />
+      </mat-form-field>
+      <mat-form-field class="campo">
+        <mat-label>Especialidade</mat-label>
+        <input matInput name="especialidade" [(ngModel)]="especialidade" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="create()">Cadastrar</button>
+</div>
+</mat-card>
+
